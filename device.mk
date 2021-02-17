@@ -206,3 +206,7 @@ PRODUCT_PACKAGES += \
 # WiFi Display
 PRODUCT_PACKAGES += \
     libnl
+
+#Gapps
+GAPPS_VARIANT := micro
+$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
