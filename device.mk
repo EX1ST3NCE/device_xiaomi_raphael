@@ -208,5 +208,4 @@ PRODUCT_PACKAGES += \
     libnl
 
 #Gapps
-GAPPS_VARIANT := micro
-$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
+$(call inherit-product-if-exists, vendor/gapps/gapps.mk)
